@@ -1,4 +1,4 @@
-# Memphis Marine Dashboard App
+# [Memphis Marine Dashboard App](https://memphis-marine-dashboard-app.vercel.app/)
 
 This project is a React-based dashboard application designed for Memphis Marine.
 
@@ -18,9 +18,9 @@ Follow these steps to set up and run the application on your local machine:
 
    Use the following command to install all required dependencies:
 
-
+```bash
    npm install @reduxjs/toolkit axios bootstrap chart.js lodash react react-bootstrap react-chartjs-2 react-dom react-gauge-chart react-redux react-router-dom react-toastify
-
+```
 
    This command installs all the dependencies listed under the `"dependencies"` section of your `package.json` file, including:
 
@@ -44,8 +44,8 @@ Follow these steps to set up and run the application on your local machine:
 
    To start the application in development mode:
 
-
+```bash
    npm start
-
+```
 
    This will run the app in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
