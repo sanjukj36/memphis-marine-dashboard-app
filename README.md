@@ -10,7 +10,7 @@ Follow these steps to set up and run the application on your local machine:
 
 1. **Clone the repository:**
 
-   git clone https://github.com/your-username/memphis-marine-dashboard-app.git
+   git clone https://github.com/sanjukj36/memphis-marine-dashboard-app.git
    cd memphis-marine-dashboard-app
  
 2. **Install dependencies:**
