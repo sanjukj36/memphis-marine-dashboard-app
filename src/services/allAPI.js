@@ -29,14 +29,4 @@ export const getUsersAPI = async () => {
     }
 };
 
-// Register api - called by authentication component
-// export const loginAPI = async(reqBody)=>{
-//     return await commonAPI("POST",`${SERVER_URL}/login`,reqBody)
-// }
-
-// Register API - called by authentication component
-// export const registerAPI = async (reqBody) => {
-//     return await commonAPI("POST", `${SERVER_URL}/register`, reqBody);
-// };
-
 

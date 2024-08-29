@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-d
 import LoginForm from './pages/LoginForm';
 import RegistrationForm from './pages/RegistrationForm';
 import { useSelector } from 'react-redux';
-import UserDashboard from './pages/UserDashboard';
 import SingleCoinDetails from './pages/SingleCoinDetails';
 import CryptocurrencyCoins from './pages/CryptocurrencyCoins';
 import WeatherSearch from './pages/WeatherSearch';
@@ -26,11 +25,6 @@ function App() {
         <Route path="/crypto-coins" element={isLoggedIn ? <CryptocurrencyCoins /> : <LoginForm  />} />
         <Route path="/weather" element={isLoggedIn ? <WeatherSearch /> : <LoginForm  />} />
         <Route path="/user-list" element={isLoggedIn & isAdmin ? <UserList /> : <LoginForm  />} />
-
-     
-        {/* <Route path="/dashboard" element={isLoggedIn  ? <Dashboard/> : <LoginForm />} /> */}
-        {/* <Route path="/coin/:coinId" element={<SingleCoinDetails/>} /> */}
-        {/* <Route path="/dashboard" element={isLoggedIn  ? <Dashboard setLoggedIn={setLoggedIn} /> : <LoginForm />} /> */}
 
       </Routes>
     </Router>

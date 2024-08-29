@@ -47,7 +47,7 @@ function WeatherSearch() {
                         <img 
                             src={`http://openweathermap.org/img/wn/${icon}@2x.png`} 
                             alt={description} 
-                            style={{ width: '50', height: '50' }} // Make image smaller
+                            style={{ width: '50', height: '50' }} 
                         />
                     </div>
                     <span className="text-muted">{description}</span>

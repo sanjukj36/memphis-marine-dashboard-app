@@ -3,7 +3,6 @@ import { useParams } from 'react-router-dom';
 import { getCryptoPrices } from '../services/apiService';
 import { Container, Image, Spinner, Table } from 'react-bootstrap';
 import NavBar from '../components/NavBar';
-// import './SingleCoinDetails.css'; // Import custom CSS for background image
 
 function SingleCoinDetails() {
     const { coinId } = useParams();

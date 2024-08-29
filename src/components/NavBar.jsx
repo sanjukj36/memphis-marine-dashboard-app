@@ -30,21 +30,21 @@ function NavBar() {
                 <Navbar.Brand href="#">
                     <img
                         src={logo}
-                        width="100"
-                        height="80"
+                        width="200px"
+                        height="50px"
                         className="d-inline-block align-top"
                         alt="Logo"
                     />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
-                <Navbar.Collapse id="navbarScroll">
-                    <Nav className="me-auto my-2 my-lg-0">
-                        <Nav.Link as={Link} to="/">Home</Nav.Link>
-                        <Nav.Link as={Link} to="/crypto-coins">Cryptocurrency Coins</Nav.Link>
-                        <Nav.Link as={Link} to="/weather">Weather Data</Nav.Link>
-                        {isAdmin && (<Nav.Link as={Link} to="/user-list">List of users</Nav.Link>)}
+                <Navbar.Collapse id="navbarScroll" style={{ fontSize: "20px" }}>
+                    <Nav className="me-auto my-2 my-lg-0"  >
+                        <Nav.Link className='text-dark '  as={Link} to="/"><i className="fa-solid fa-house fa-fade">  </i><span className='font-weight-bold'>&nbsp;Home </span> </Nav.Link>
+                        <Nav.Link className='text-dark'  as={Link} to="/crypto-coins"><i class="fa-solid fa-hand-holding-dollar  fa-fade"></i><span className=''>&nbsp;Cryptocurrency Coins </span> </Nav.Link>
+                        <Nav.Link className='text-dark'  as={Link} to="/weather"><i class="fa-solid fa-cloud-sun-rain  fa-fade"> </i><span className=''>&nbsp; Weather Data </span>  </Nav.Link>
+                        {isAdmin && (<Nav.Link className='text-dark'  as={Link} to="/user-list"> <i class="fa-solid fa-people-group fa-fade"></i><span className=''>&nbsp;List of users </span> </Nav.Link>)}
                     </Nav>
-                    <Button variant="outline-light" onClick={handleLogout}>Logout</Button>
+                    <Button variant="outline-light" onClick={handleLogout}><i class="fa-solid fa-right-from-bracket"></i> Logout</Button>
                 </Navbar.Collapse>
                 <ToastContainer position="top-right" autoClose={5000} hideProgressBar={false} newestOnTop={false} closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover />
             </Container>

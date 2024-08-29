@@ -6,7 +6,6 @@ import 'chart.js/auto';
 import { Pie, Bar } from 'react-chartjs-2';
 import { useNavigate } from 'react-router-dom';
 import NavBar from '../components/NavBar';
-// import './CryptocurrencyCoins.css'; // Create this CSS file for custom styles
 
 function CryptocurrencyCoins() {
   const [cryptoData, setCryptoData] = useState([]);
@@ -67,22 +66,12 @@ function CryptocurrencyCoins() {
     plugins: {
       legend: {
         labels: {
-          color: '#FFFFFF', // White text color for legend labels
+          color: '#FFFFFF', 
         }
       },
-      // tooltip: {
-      //   callbacks: {
-      //     label: function(tooltipItem) {
-      //       // Customize tooltip label
-      //       return `${tooltipItem.label}: ${tooltipItem.formattedValue}`;
-      //     }
-      //   },
-      //   bodyColor: '#FFFFFF', // White text color for tooltip body
-      //   titleColor: '#FFFFFF', // White text color for tooltip title
-      // }
+      
     },
-    // responsive: true,
-    // maintainAspectRatio: false,
+    
   };
 
 
@@ -92,8 +81,8 @@ function CryptocurrencyCoins() {
       {
         label: 'Current Price',
         data: cryptoData.slice(0, 15).map(crypto => crypto.current_price),
-        backgroundColor: '#FFFFFF', // White background color
-        borderColor: '#FFFFFF', // White border color
+        backgroundColor: '#FFFFFF', 
+        borderColor: '#FFFFFF', 
         borderWidth: 3,
       },
     ],

@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Table } from 'react-bootstrap';
 import NavBar from '../components/NavBar';
 import { getUsersAPI } from '../services/allAPI';
-// import './UserList.css'; // Import custom CSS
 
 function UserList() {
     const [adminUsers, setAdminUsers] = useState([]);
@@ -39,7 +38,7 @@ function UserList() {
                 <Container>
                     <Row className="text-center my-4">
                         <Col>
-                            <h1 className='text-primary'>User List</h1>
+                            <h1 className='text-primary'><i class="fa-solid fa-people-group fa-fade">&nbsp; User List</i> </h1>
 
                             <p><strong>Total Users:</strong> {totalCount}</p>
 

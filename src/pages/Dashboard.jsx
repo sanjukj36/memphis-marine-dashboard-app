@@ -3,8 +3,6 @@ import { Card, Button, Modal, Table } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import NavBar from '../components/NavBar';
 import { useSelector } from 'react-redux';
-import { getUsersAPI } from '../services/allAPI';
-// import './UserDashboard.css';  // Add a separate CSS file for custom styling
 
 function Dashboard() {
     const navigate = useNavigate();
@@ -59,8 +57,6 @@ function Dashboard() {
                     </Card>
                 </div>
             </section>
-
-            
         </>
     );
 }

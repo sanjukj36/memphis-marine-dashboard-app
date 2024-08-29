@@ -76,7 +76,7 @@ function RegistrationForm() {
                         />
                     </Form.Group>
 
-                    <Form.Group className="mb-3">
+                    {/* <Form.Group className="mb-3">
                         <Form.Label>User Type</Form.Label>
                         <Form.Select
                             value={userType}
@@ -85,16 +85,13 @@ function RegistrationForm() {
                             <option value="user">User</option>
                             <option value="admin">Admin</option>
                         </Form.Select>
-                    </Form.Group>
+                    </Form.Group> */}
 
                     <Button variant="primary" type="submit" className="w-100">
                         Register
                     </Button>
                 </Form>
 
-                {/* <p className="mt-3 text-center">
-                    Have an account? <Link to="/login">Login here</Link>
-                </p> */}
                 <p className="mt-3 text-center text-white">
                 Have an account?  <Link to="/login" className="text-primary">Login heree</Link>
                 </p>
