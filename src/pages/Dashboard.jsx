@@ -24,7 +24,7 @@ function Dashboard() {
             <NavBar />
             <section className="dashboard-container">
                 <h1 className="dashboard-title">Welcome to the <span>{isAdmin ? "Admin" : "User"}</span> Dashboard</h1>
-                <div className="dashboard-cards">
+                <div className="dashboard-cards mt-5">
                     {isAdmin && (
                         <Card className="dashboard-card">
                             <Card.Body>
